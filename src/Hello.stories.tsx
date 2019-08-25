@@ -1,11 +1,11 @@
 import React from 'react';
 
 export default {
-  title: 'CSF example',
+  title: 'CSF|child/grandchild/examples',
 };
 
-export const hello = () => <h1>hello world</h1>;
+export const click = () => <button>click me</button>;
 
-hello.story = {
-  name: 'hello world'
+click.story = {
+  name: 'click me story'
 };

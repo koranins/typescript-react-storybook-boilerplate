@@ -13,6 +13,7 @@
     "react": "^16.9.0"
   },
   "devDependencies": {
+    "@storybook/addon-docs": "^5.2.0-beta.40",
     "@storybook/react": "^5.2.0-beta.40",
     "@types/webpack": "^4.39.1",
     "babel-loader": "^8.0.6",
