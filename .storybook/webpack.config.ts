@@ -10,7 +10,6 @@ const babelLoader: Loader = {
   loader: require.resolve('babel-loader'),
   options: {
     presets: ['@babel/react', '@babel/typescript'],
-    // plugins: [['styled-components', { ssr: false }]],
     env: {
       test: {
         plugins: ['require-context-hook'],
@@ -19,7 +18,7 @@ const babelLoader: Loader = {
   },
 };
 
-const config: webpack.Configuration = {
+const config: Configuration = {
   module: {
     rules: [
       {
@@ -41,7 +40,5 @@ const config: webpack.Configuration = {
  * See link below for more details:
  * https://storybook.js.org/docs/configurations/custom-webpack-config/#webpack-customisation-modes
  */
-export default async (baseConfig: BaseConfig): Promise<webpack.Configuration> => {
-  console.log('[ks] wtf', baseConfig);
-  return merge(baseConfig.config, config);
-}
+export default async (baseConfig: BaseConfig): Promise<Configuration> =>
+  merge(baseConfig.config, config);
