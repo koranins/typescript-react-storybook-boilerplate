@@ -1,4 +1,4 @@
-import webpack, { Configuration, Loader } from 'webpack';
+import { Configuration, Loader } from 'webpack';
 import merge from 'webpack-merge';
 
 type BaseConfig = {
