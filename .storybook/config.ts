@@ -1,7 +1,12 @@
-import { configure } from '@storybook/react';
+import { configure, addParameters } from '@storybook/react';
+
+addParameters({
+  options: {
+    showRoots: true,
+  },
+});
 
 configure(
   require.context('../src', true, /\.stories\.(tsx?|mdx)$/),
-  // require.context('../src', true, /\.stories.jsx$/),
   module,
 );

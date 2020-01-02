@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default {
-  title: 'CSF|child/grandchild/ts',
+  title: 'CSF/child/grandchild/ts',
   component: HTMLButtonElement
 };
 

@@ -1,5 +1,6 @@
 import { Configuration, Loader } from 'webpack';
 import merge from 'webpack-merge';
+import path from 'path';
 
 type BaseConfig = {
   config: Configuration,
@@ -9,12 +10,10 @@ type BaseConfig = {
 const babelLoader: Loader = {
   loader: require.resolve('babel-loader'),
   options: {
-    presets: ['@babel/react', '@babel/typescript'],
-    env: {
-      test: {
-        plugins: ['require-context-hook'],
-      },
-    },
+    presets: [
+      require.resolve('@babel/preset-typescript'),
+      require.resolve('@babel/preset-react'),
+    ],
   },
 };
 
@@ -23,10 +22,8 @@ const config: Configuration = {
     rules: [
       {
         test: /\.(ts|tsx)?$/,
-        use: [
-          babelLoader,
-          require.resolve('react-docgen-typescript-loader'),
-        ],
+        use: babelLoader,
+        include: path.resolve(__dirname, '../'),
       }
     ],
   },

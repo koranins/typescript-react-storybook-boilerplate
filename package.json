@@ -10,18 +10,18 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.10.2"
+    "react": "^16.12.0"
   },
   "devDependencies": {
-    "@storybook/addon-docs": "^5.2.1",
-    "@storybook/react": "^5.2.1",
-    "@types/webpack": "^4.39.2",
-    "@types/webpack-env": "^1.14.0",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "@storybook/addon-docs": "next",
+    "@storybook/react": "next",
+    "@types/react": "^16.9.17",
+    "@types/webpack": "^4.41.1",
     "babel-loader": "^8.0.6",
-    "babel-plugin-require-context-hook": "^1.0.0",
-    "react-docgen-typescript-loader": "^3.3.0",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.3",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.4",
     "webpack-merge": "^4.2.2"
   }
 }
