@@ -19,6 +19,7 @@ yarn storybook
 I'm not sure why the `localhost` URL doesn't work for.
 I have to use the URL with an IP address.
 
+```sh
 ╭─────────────────────────────────────────────────────╮
 │                                                     │
 │   Storybook 5.3.0-rc.7 started                      │
@@ -28,3 +29,4 @@ I have to use the URL with an IP address.
 │    On your network:  http://X.X.X.X:X/              │
 │                                                     │
 ╰─────────────────────────────────────────────────────╯
+```
