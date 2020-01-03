@@ -16,7 +16,7 @@ yarn storybook
 
 ## Note
 
-I'm not sure why the `localhost` URL doesn't work for.
+I'm not sure why the `localhost` URL doesn't work.
 I have to use the URL with an IP address.
 
 ```sh
