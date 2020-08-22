@@ -1,6 +1,10 @@
 module.exports = {
-  addons: [
-    '@storybook/addon-docs/preset',
+  "stories": [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)"
   ],
-  showRoots: true,
-};
+  "addons": [
+    "@storybook/addon-links",
+    "@storybook/addon-essentials"
+  ]
+}
